@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- 
+        Le Formulaire
+        <form></form> pour ouvrir et fermer le formulaire
+        @attr action (string) adresse du fichier de traitement du formulaire
+        @attr method (string) GET ou POST
+     -->
+    <form action="" method="GET"> 
+    <!--formenctype="multipart/form-data"> --> <!-- tout type de fichier peuvent etre envoyé formenctype !! imperativement ou auccun envoi !! -->
+    <!-- <input type="hidden" id="shut" name="shut"> --> <!-- sert pour les tokens champs cachés  -->
+
+
+    <!-- 
+        Les cases à cocher multiple 
+    -->
+    <div>
+        Quel parfum pour votre glace ? (plusieurs choix possible ) <br>
+        <label> <input type="checkbox" name="parfum"value="chocolat"checked>Chocolat <br> </label>
+        <label> <input type="checkbox" name="parfum"value="vanilla">Vanille <br> </label>
+        <label> <input type="checkbox" name="parfum"value="mint"checked>Menthe <br></label>
+        <label> <input type="checkbox" name="parfum"value="strawberry">Fraise</label>
+
+    </div>
+
+    <!-- les cases a cocher unique -->
+    <div>
+            Quel parfum pour votre glace ? (plusieurs choix possible ) <br>
+            <label> <input type="radio" name="parfum"value="chocolat" >Chocolat <br> </label>
+            <label> <input type="radio" name="parfum"value="vanilla" checked>Vanille <br> </label>
+            <label> <input type="radio" name="parfum"value="mint">Menthe <br></label>
+            <label> <input type="radio" name="parfum"value="strawberry">Fraise</label>
+    
+        </div>
+
+
+
+
+
+
+
+
+        <!-- 
+            Input - Simple 
+            @ttr type (string) text
+            @attr id (string) identifiant unique du champ
+            @attr name (sting / array = tableau) nom du champ pour le serveur
+        -->
+        <!-- 
+            Label
+            Permet de donner une information sur le champ
+            On lie les champs avec les attribus "for" et "id" 
+        -->
+        <label for="firstname">Prénom</label>
+        <input type="text" id="firstname" name="firstname" required>
+        <hr>
+        <!-- tire un trait -->
+
+        <!-- 
+            @attr required (string) required pas de valeur nécessaire force l'utilisateur a remplir le champ
+        -->
+
+        <label for="lastname">Nom </label>
+        <input type="text" id="lastname" name="lastname" required>
+        <hr>
+
+        <!-- 
+    Input - Email
+    ce champ attend un adresse email : feffz@fzffzf.fe
+    @attr type (string) email
+    @attr place holder (string) donne une indication sur le champ
+        -->
+
+        <label for="Email">email </label>
+        <input type="E-mail" id="email" name="E-mail" placeholder="E-mail" required>
+        <hr>
+
+        <!-- 
+            Input - Telephone 
+            @attr type (string) telephone
+        -->
+        <label for="phone">telephone</label>
+        <input type="tel" id="phone" name="phone" value="0123456789" required>
+        <hr>
+
+        <!-- 
+    Input - Mot de passe
+    @attr type (string) 
+ -->
+        <label for="password">Mot de passe</label>
+        <input type="password" id="password" name="password" value="123456" placeholder="Saisir un MDP">
+        <hr>
+        
+           <!-- 
+    Input - Adresse URL
+    @attr type (string) 
+ -->
+
+        <label>adresse du site  <!-- si la balise label encadre le input alors on peut ne pas mettre label for = -->
+        <input type="url" id="website" >
+    </label>
+    <hr>
+
+<!-- 
+    Champ de texte long
+ -->
+
+ <textarea cols="30" rows="10" placeholder="saisir votre champ"></textarea> <!-- cols dimension de largeur 30 colonne rows dimension de 10 de hauteur --> 
+ <hr> 
+
+ <!-- champs d'insertion de fichiers
+ -->
+  <label for="picture">ajouter une photo</label>
+  <input type="file" id="picture" name="picture" multiple>
+  <hr>
+
+<!-- les listes de selection 
+-->
+
+<select name="gender">
+        <option value="null">Autre</option>
+        <option value="female"selected>Femme</option>
+        <option value="male">Homme</option>
+</select>
+<hr>
+
+<div>
+liste de courses :
+
+<select name="shopping"multiple> <!-- lattribu multiple permet de faire plusieurs choix -->
+
+<option value="banana">banane</option>
+<option value="banana">pomme</option>
+<option value="banana">kiwi</option>
+
+
+
+    </select>
+
+
+</div>
+
+
+<!-- bouton de soumission au formulaire 
+-->
+
+        <button type="submit">envoyer</button>
+        <input type="submit" value="Envois">
+        
+        <!-- 
+            Bouton de remise a Zero
+        -->
+        <button type="reset">Annuler</button>
+
+        <!-- 
+            Bouton : bouton d'action 
+        -->
+        
+        <button type="button" onclick="alert('NOOOOOOOOOOOO!');">Clic...</button>
+
+    </form>
+
+</body>
+
+</html>

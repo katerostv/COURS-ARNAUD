@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mickey </title>
+    <style>
+        div {
+            height: 400px;
+            width: 400px;
+            border-radius: 50%;
+            background-color: black;
+            display: block;
+            position: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -200px;
+            margin-left: -200px;
+
+           /* opacity: 1;
+            -webkit-transition: all 2s;
+                    transition: all 2s;
+                    animation-name: changeColors;
+                    animation-duration: 3s;
+                    animation-iteration-count: infinite */
+        }
+
+        div::before, div::after {
+
+            content: "";
+            position: absolute;
+            top: -100px;
+            height: 50%;
+            width:50%;
+            border-radius: 50%;
+            background-color: rgb(0, 0, 0);
+
+          /*  animation-name: changeColors2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite; */
+
+          
+
+        }
+
+        div::before {
+            left: -80px;
+
+
+        }
+
+        div::after {
+            
+           right: -80px; 
+
+        }
+        
+            div:hover {
+                opacity: 0;
+                top: -300px;    
+                transform: rotate(3000deg);
+    
+            } 
+
+           /* @keyframes changeColors {
+                0%{
+                    background-color: aqua
+                }
+                50%{
+                    background-color: yellow
+                }
+                100%{
+                    background-color: red
+                }
+            }
+
+            @keyframes changeColors2 {
+                0%{
+                    background-color: aqua;
+                }
+                5%{
+                    background-color: yellow;
+                }
+                10%{
+                    background-color: red;
+                }
+            
+
+            15% {
+                    background-color: rgb(65, 255, 151);
+                }
+                20%{
+                    background-color: yellow;
+                }
+                25%{
+                    background-color: rgb(0, 89, 255);
+                }
+            
+            30%{
+                    background-color: aqua;
+                }
+                35%{
+                    background-color: yellow;
+                }
+                40%{
+                    background-color: red;
+                }
+            
+
+            45%{
+                    background-color: aqua;
+                }
+                50%{
+                    background-color: yellow;
+                }
+
+                3%{
+                    background-color: aqua;
+                }
+               6%{
+                    background-color: yellow;
+                }
+               9%{
+                    background-color: red;
+                }
+            
+
+            12% {
+                    background-color: rgb(65, 255, 151);
+                }
+               15%{
+                    background-color: yellow;
+                }
+               18%{
+                    background-color: rgb(0, 89, 255);
+                }
+            
+            21%{
+                    background-color: aqua;
+                }
+                24%{
+                    background-color: yellow;
+                }
+                27%{
+                    background-color: red;
+                }
+            
+
+            31%{
+                    background-color: aqua;
+                }
+               34%{
+                    background-color: yellow;
+                }
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <div>
+    </div>
+
+</body>
+
+</html>

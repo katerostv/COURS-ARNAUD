@@ -1,0 +1,153 @@
+/*.main-header {
+    background-color: aqua;
+}/*
+header > nav {
+    background-color: blueviolet
+}*
+header > nav > ul {    
+    background-color: rgb(251, 255, 0)
+}*
+.main-content {
+    background-color: chocolate;
+}
+.sidebar {
+    background-color: tomato;
+}
+main {
+    background-color: salmon;
+}
+.main-footer {
+    background-color: #333333;
+    height: 200px;
+}*/
+
+
+* {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    clear: both;
+    position: relative;
+}
+
+
+/**
+ * Header
+ */
+
+.main-header {
+    background-color: white;
+    position: fixed;
+    /*top: 0;*/
+    left: 0;
+    right: 0;
+
+    z-index: 20;
+
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+       -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+            box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.35);
+}
+
+/* Logo */
+.logo-css {
+    width: 200px;
+    height: 50px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    text-indent: -9999px;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+
+/* Menu principal */
+.main-header nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+}
+.main-header ul {
+    margin-right: -1rem;
+}
+.main-header li {
+    display: inline-block;
+}
+.main-header li a {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    padding: 0 1rem;
+    
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333333;
+    font-weight: 600;
+
+    -webkit-transition: all 1s; /* Safari */
+    transition: all 1s;                           /* balise transition */
+    
+}
+.main-header li a:hover {
+    color: #c1181e;
+}
+
+
+
+/**
+ * Footer
+ */
+
+
+
+/**
+ * Content
+ */
+
+.main-content {
+    position: relative;
+    height: 100%;
+    display: block;
+
+    z-index: 10;
+    padding-top: 82px;
+}
+.main-content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Sidebar */
+
+.sidebar {
+    position: relative;
+    height: 100%;
+    width: 280px;
+    z-index: 2;
+}
+
+/* main */
+main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding-left: 280px;
+    z-index: 1;
+}
+.main-content-inner {
+    padding: 1rem;
+}
+
+
+
+
+

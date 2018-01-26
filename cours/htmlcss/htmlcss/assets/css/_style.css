@@ -1,0 +1,23 @@
+* {
+    padding: 3rem;
+}
+html {
+    border: 3px solid #000000;
+}
+body {
+    border: 3px solid #018317;
+}
+
+.wrapper {
+    border: 3px solid #CCCCCC;
+}
+
+header {
+    border: 3px solid #0044ff;
+}
+div.main-content {
+    border: 3px solid #FF0000;
+}
+footer.main-footer {
+    border: 3px solid #ffd900;
+}

@@ -1,0 +1,41 @@
+body {
+    background-color: blueviolet;
+}
+
+div {
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    line-height: 50px;
+}
+
+
+/* le CSS ci dessous permet de changer de font selont la taille de l'écran */
+/* Small devices (landscape phones, 576px and up */
+@media (min-width: 576px){
+    body {
+        background-color: yellowgreen
+    }
+}
+
+/* Medium devices (tablets, 768px and up */
+@media (min-width: 768px){
+    body {
+        background-color: tomato
+    }
+}
+
+/* Large devices (desktops, 992px and up */
+@media (min-width: 992px){
+    body {
+        background-color: black
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+body {
+    background-color: blue
+}
+}

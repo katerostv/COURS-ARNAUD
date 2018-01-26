@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .h1 {
+        /* Color change la couleur du texte */
+        color: red;
+
+        /* 
+        text-decoration change les attributs de decoration du texte. 
+        soulignement, surlignement, texte barré
+         */
+        /* text-decoration: underline; */
+
+        /* font-family definit le type de police à appliquer sur un texte */
+        font-family: 'Arial Narrow', Arial, sans-serif;
+
+        background-color: aqua;
+
+        display: flex;
+        font-size: 2em;
+        -webkit-margin-before: 0.67em;
+        -webkit-margin-after: 0.67em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+
+    .h6 {
+        display: block;
+        font-size: 0.67em;
+        -webkit-margin-before: 2.33em;
+        -webkit-margin-after: 2.33em;
+        -webkit-margin-start: 0px;
+        -webkit-margin-end: 0px;
+        font-weight: bold;
+    }
+    h1 > span, h6 > span {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+
+        border-bottom:  1px solid red;
+        padding-bottom: 16px;
+        
+
+    }
+
+
+    </style>
+</head>
+<body>
+    Modifier les titres (h1 - h6) <br>
+    Le titre H1 doit avoir l'aspect de H6 <br>
+    Le titre H6 doit avoir l'aspect de H1 <br>
+
+    <h1>My big title</h1>
+    <h1 class="h6">Mon super titre</h1>
+    <h6 class="h1">
+        <span>mon petit titre</span>
+    </h6>
+</body>
+</html>
